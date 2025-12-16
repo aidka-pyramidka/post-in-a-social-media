@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Posts CRUD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Post in a Social Media App — CRUD</h1>
+        <p class="muted">Backend endpoints: <code>/items</code></p>
+      </header>
+
+      <section class="card">
+        <h2>Create post</h2>
+        <form id="createForm" class="form-grid">
+          <label>
+            <span>Author</span>
+            <input name="author" type="text" placeholder="alice" required />
+          </label>
+          <label class="span-2">
+            <span>Content</span>
+            <textarea name="content" rows="3" placeholder="Write something..." required></textarea>
+          </label>
+          <label>
+            <span>Visibility</span>
+            <select name="visibility">
+              <option value="PUBLIC">PUBLIC</option>
+              <option value="FRIENDS">FRIENDS</option>
+              <option value="PRIVATE">PRIVATE</option>
+            </select>
+          </label>
+          <label>
+            <span>Likes</span>
+            <input name="likes" type="number" min="0" value="0" />
+          </label>
+          <div class="actions span-2">
+            <button type="submit">Create</button>
+            <button type="button" id="refreshBtn" class="secondary">Refresh</button>
+          </div>
+        </form>
+        <div id="createError" class="error" hidden></div>
+      </section>
+
+      <section class="card">
+        <div class="list-header">
+          <h2>Posts</h2>
+          <div class="muted" id="statusText"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Author</th>
+                <th>Visibility</th>
+                <th>Likes</th>
+                <th>Created</th>
+                <th>Updated</th>
+                <th>Content</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="itemsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- Edit modal -->
+    <div id="modalBackdrop" class="backdrop" hidden></div>
+    <div id="editModal" class="modal" hidden>
+      <div class="modal-header">
+        <h3>Edit post</h3>
+        <button id="closeModalBtn" class="icon-btn" title="Close">×</button>
+      </div>
+      <form id="editForm" class="form-grid">
+        <input type="hidden" name="id" />
+        <label>
+          <span>Author</span>
+          <input name="author" type="text" required />
+        </label>
+        <label>
+          <span>Visibility</span>
+          <select name="visibility">
+            <option value="PUBLIC">PUBLIC</option>
+            <option value="FRIENDS">FRIENDS</option>
+            <option value="PRIVATE">PRIVATE</option>
+          </select>
+        </label>
+        <label>
+          <span>Likes</span>
+          <input name="likes" type="number" min="0" value="0" />
+        </label>
+        <label class="span-2">
+          <span>Content</span>
+          <textarea name="content" rows="4" required></textarea>
+        </label>
+        <div class="actions span-2">
+          <button type="submit">Save</button>
+          <button type="button" id="cancelEditBtn" class="secondary">Cancel</button>
+        </div>
+      </form>
+      <div id="editError" class="error" hidden></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+

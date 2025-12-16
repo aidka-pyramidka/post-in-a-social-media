@@ -1,0 +1,12 @@
+com/ict/socialmedia/post/config/AppConfig.class
+com/ict/socialmedia/post/repository/mongo/MongoPostRepository.class
+com/ict/socialmedia/post/repository/PostRepository.class
+com/ict/socialmedia/post/model/Visibility.class
+com/ict/socialmedia/post/App.class
+com/ict/socialmedia/post/util/ConsoleIO.class
+com/ict/socialmedia/post/service/PostService.class
+com/ict/socialmedia/post/util/SqlScriptRunner.class
+com/ict/socialmedia/post/repository/postgres/PostgresBootstrapper.class
+com/ict/socialmedia/post/model/Post.class
+com/ict/socialmedia/post/repository/postgres/PostgresPostRepository.class
+com/ict/socialmedia/post/repository/mongo/MongoBootstrapper.class

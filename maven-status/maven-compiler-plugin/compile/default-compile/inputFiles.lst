@@ -1,0 +1,12 @@
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/App.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/config/AppConfig.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/model/Post.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/model/Visibility.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/repository/PostRepository.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/repository/mongo/MongoBootstrapper.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/repository/mongo/MongoPostRepository.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/repository/postgres/PostgresBootstrapper.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/repository/postgres/PostgresPostRepository.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/service/PostService.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/util/ConsoleIO.java
+/Users/aidaalimzanova/Downloads/Архив 3/java-app/src/main/java/com/ict/socialmedia/post/util/SqlScriptRunner.java
